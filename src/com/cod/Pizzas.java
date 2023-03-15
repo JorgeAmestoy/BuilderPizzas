@@ -96,4 +96,9 @@ public class Pizzas {
     public void setRecojida(int recojida) {
         this.recojida = recojida;
     }
+
+    public String toString(){
+       return "Pizza: "+this.cebolla+" "+this.size;
+    }
+
 }

@@ -4,7 +4,7 @@ public class BuilderPizzas {
 
     // este es el objeto que va a construir nuestro Builder
     // utilizamos el guion bajo para remarcar que es un objeto de esta clase
-    protected Pizzas _pizza;
+    private Pizzas _pizza;
 
     // metodo que devuelve el objeto terminado
     public Pizzas build() {
@@ -34,7 +34,7 @@ public class BuilderPizzas {
 
     public BuilderPizzas setCebolla(boolean cebolla) {
         _pizza.setCebolla(cebolla);
-        return this;
+        return this;//retorna un builder
     }
 
     public BuilderPizzas setSinGluten(boolean sinGluten){
